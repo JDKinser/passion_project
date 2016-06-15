@@ -1,0 +1,93 @@
+#meatwad-info {
+    position: absolute;
+    margin: 240px 600px;
+}
+
+#carl-info {
+    position: absolute;
+    margin: 30px 1050px;
+}
+
+#frylock-info {
+    position: absolute;
+    margin: 150px 750px;
+}
+
+#shake-info {
+    position: absolute;
+    margin: 100px 400px;
+}
+
+#window-info {
+    position: absolute;
+    margin: 65px 625px;
+}
+
+#radio-info {
+    position: absolute;
+    margin: 370px 500px;
+}
+
+.information-container {
+	position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: cadetblue;
+    border-radius: 60px;
+    box-shadow: 10px 10px 15px #000000;
+    opacity: .9;
+}
+
+#background {
+	position: absolute;
+}
+
+#meatwad {
+	position: absolute;
+	height: 350px;
+	width: 600px;
+	margin: 628px 789px;
+	border-radius: 25%;
+}
+
+#carl {
+    position: absolute;
+    height: 1080px;
+    width: 553px;
+    margin: 0px 1378px;
+    border-radius: 55% 65% 50% 20%;
+}
+
+#frylock {
+    position: absolute;
+    height: 530px;
+    width: 335px;
+    margin: 87px 462px;
+    border-radius: 0 0 60%;
+}
+
+#shake {
+    position: absolute;
+    height: 550px;
+    width: 410px;
+    margin: 235px 51px;
+}
+
+#window {
+    position: absolute;
+    height: 464px;
+    width: 200px;
+    margin: 74px 1039px;
+}
+
+#radio {
+    position: absolute;
+    height: 272px;
+    width: 530px;
+    margin: 785px 69px;
+}
+
+h1 {
+	margin-top: 185px;
+	text-align: center;
+}
