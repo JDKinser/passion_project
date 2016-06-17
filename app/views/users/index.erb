@@ -1,0 +1,5 @@
+<h1>Hello</h1>
+
+<% @hotspots.each do |hotspot| %>
+	<a href="/hotspots/<%= hotspot.id %>">Hotspot - <%= hotspot.name %></a>
+<% end %>

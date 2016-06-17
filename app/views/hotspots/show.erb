@@ -1,0 +1,20 @@
+<h1 class="hotspot_title"><%= @hotspot.name %></h1>
+<div class="hotspot_boxes_container" style="margin-bottom: 10px; height: 20px;">
+	<button href="#">Reset Votes</button>
+</div>
+<div class="hotspot_boxes_container <%= add_vote_class(@hotspot, current_user)%>">
+	<img id="background" src="../supersmashbros64.jpg">
+	<% @boxes.each do |box| %>
+		<div class="hotspot_boxes" style="top: <%= box.y_coord %>px; left: <%= box.x_coord %>px; width: <%= box.width %>px; height: <%= box.height %>px;" data-box-id="<%= box.id %>">
+			<% if current_user == @hotspot.user %>
+				<% if box.vote.nil? %>
+					 <p class="votes">0</p> 
+				<% else %>
+					<p class="votes"><%= box.vote.vote_count %></p>
+				<% end %>
+			<% end %>
+		</div>
+	<% end %>
+</div>
+
+
