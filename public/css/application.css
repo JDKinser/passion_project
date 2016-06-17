@@ -151,10 +151,14 @@ footer {
 }
 
 .character_info {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background-color: red;
+    position: absolute;
+    top: 423px;
+    left: 100px;
+    width: 800px;
+    height: 86px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 20px;
 
 }
 
