@@ -1,0 +1,14 @@
+<h1>Place your Boxes</h1>
+
+<form id="new_box_form" method="POST" action="/boxes">
+	<label>Enter x_coord</label>
+  <input type="text" name="box[x_coord]">
+  <label>Enter y_coord</label>
+  <input type="text" name="box[y_coord]">
+  <label>Enter width</label>
+  <input type="text" name="box[width]">
+  <label>Enter height</label>
+  <input type="text" name="box[height]">
+  <input type="hidden" name="box[hotspot_id]" value="<%= @hotspot.id %>">
+  <input type="submit" value="Create Box">
+</form>

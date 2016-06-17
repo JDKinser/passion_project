@@ -1,0 +1,15 @@
+<h1 class="hotspot_title"><%= @hotspot.name %></h1>
+<div class="hotspot_boxes_container">
+	<img id="background" src="../supersmashbros64.jpg">
+	<% @boxes.each do |box| %>
+		<div class="hotspot_boxes" style="top: <%= box.y_coord %>px; left: <%= box.x_coord %>px; width: <%= box.width %>px; height: <%= box.height %>px;" data-box-id="<%= box.id %>">
+			<% if box.vote.nil? %>
+				<% box.vote %>
+			<% else %>
+				<p class="votes"><%= box.vote.vote_count %></p>
+			<% end %>
+		</div>
+	<% end %>
+</div>
+
+

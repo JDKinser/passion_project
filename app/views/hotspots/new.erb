@@ -1,0 +1,12 @@
+<h1>New Hotspot</h1>
+
+<% if @errors %>
+  <% @errors.each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
+
+<form id="new_hotspot_form" method="POST" action="/hotspots">
+  <input type="text" name="hotspot[name]">
+  <input type="submit" value="Create Hotspot">
+</form>
