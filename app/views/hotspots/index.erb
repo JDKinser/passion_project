@@ -1,11 +1,16 @@
+<br>
+<br>
+<table style="border: 1px solid black; border-collapse: collapse;" cellspacing="5" cellpadding="5" border="1">
 <% @hotspots.each do |hotspot| %>
-	<ul>
-		<li><%= hotspot.name %></li>
-	</ul>
-	<a href="/hotspots/<%= hotspot.id %>/edit">edit</a> |
-	<a href="/hotspots/<%= hotspot.id %>">results</a>
-<% end %>
+	
+		<tr>
+			<td style="padding: 5px; text_align: left;"><%= hotspot.name %></td>
+			<td style="padding: 5px; text_align: left;"><a href="/hotspots/<%= hotspot.id %>/edit">edit</a></td>
+			<td style="padding: 5px; text_align: left;"><a href="/hotspots/<%= hotspot.id %>">results</a></td>
+		</tr>
 
-<div>
-	<a href="/hotspots/new">Create New Hotspot</a>
+<% end %>
+</table>
+<div style="margin-top: 10px;">
+	<button href="/hotspots/new">Create New Hotspot</button>
 </div>

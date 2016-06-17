@@ -1,6 +1,7 @@
 class Vote < ActiveRecord::Base
   # Remember to create a migration!
   belongs_to :box
+  belongs_to :user
 
   
 

@@ -18,8 +18,28 @@
   <title></title>
 </head>
 <body>
-  <header></header>
+  <header>
+    <a href="/hotspots"><h1 class="logo">Stream Command</h1></a>
+        <nav class="navbar">
+          <ul class="navlist">
+            <% if logged_in? %>
+              <li><a href="/users"><%= @current_user.username %></a></li>
+              <li><%= erb :'/users/logout' %></li>
+            <% else %>
+              <li><a href="/users/login">Login</a></li>
+              <li><a href="/users/new">Signup</a></li>
+            <% end %>
+          </ul>
+        </nav>
+  </header>
   <%= yield %>
   <footer></footer>
 </body>
 </html>
+
+
+
+
+
+
+  

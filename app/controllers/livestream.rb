@@ -1,7 +1,9 @@
-# get '/hotspots' do
+get '/livestream/:id' do
 
-#   @hotspots = Hotspot.all 
+  @hotspot = Hotspot.find(params[:id]) #define instance variable for view
+  @boxes = @hotspot.boxes
 
-#   erb :'hotspots/index'
 
-# end
+  erb :'livestream/show', layout: false
+
+end

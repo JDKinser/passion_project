@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/livestream.js"></script>
+
+  <title></title>
+</head>
+<body>
+
+<h1 class="hotspot_title">Twitch.TV</h1>
+<div class="hotspot_boxes_container">
+	<img id="background" src="../supersmashbros64.jpg">
+	<% @boxes.each do |box| %>
+		<div class="vote_boxes" style="top: <%= box.y_coord %>px; left: <%= box.x_coord %>px; width: <%= box.width %>px; height: <%= box.height %>px;" data-box-id="<%= box.id %>">
+		</div>
+	<% end %>
+</div>
+<div id="success_msg" style="display: none;"></div>
+</body>
